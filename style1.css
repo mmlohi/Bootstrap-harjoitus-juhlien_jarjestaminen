@@ -5,8 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(./bouquet-142876.jpg);
-    background-size: cover;
+  
 }
 
 p {
@@ -51,7 +50,10 @@ i,
 span {
     display: inline-block;
 }
-
+.img{
+    width: 100%;
+    margin: 20px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -205,6 +207,9 @@ a.article:hover {
 
 @media (max-width: 768px) {
  
+    .img{
+        width: 100%;
+    }
     #sidebar {
         min-width: 80px;
         max-width: 80px;
