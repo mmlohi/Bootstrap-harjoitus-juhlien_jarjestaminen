@@ -32,12 +32,14 @@ a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
+
 }
 
 .line {
@@ -51,6 +53,7 @@ i,
 span {
     display: inline-block;
 }
+
 
 /* ---------------------------------------------------
     SIDEBAR STYLE

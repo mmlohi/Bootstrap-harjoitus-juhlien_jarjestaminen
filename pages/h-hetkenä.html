@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Juhlien järjestäminen</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- My Custom JS -->
+    <script src="/script.js" defer></script>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Muistilista</h3>
+                <strong>M</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Häät
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="ennen.html">Ennen</a>
+                        </li>
+                        <li>
+                            <a href="h-hetkenä.html">H-hetkenä</a>
+                        </li>
+                        <li>
+                            <a href="jälkeen.html">Jälkeen</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="mietelauseita.html">
+                        <i class="fas fa-briefcase"></i>
+                        Ajatelmia
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Linkit
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="hääoppaat.html">Oppaat</a>
+                        </li>
+                        <li>
+                            <a href="kuvia.html">Kuvia</a>
+                        </li>
+                        <li>
+                            <a href="muuta.html">Muuta</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Valikko</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                    href="https://www.naimisiin.info/haaopas/muistiprint.html">Tulostettava
+                                    muistilista</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="ideakuvia.html">Ideakuvia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <h2>Hääpäivänä:</h2>
+                    <div class="col-sm-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet rem adipisci tenetur libero
+                            hic voluptatum praesentium repellat id cumque nisi consectetur ea, esse labore delectus cum.
+                            Aperiam rerum in autem.</p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, molestiae! Omnis voluptatibus
+                            praesentium culpa, ullam repudiandae sapiente nisi velit voluptatum alias placeat esse
+                            suscipit! Temporibus iste natus perferendis provident aliquam.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium sit doloribus
+                            eligendi. Assumenda tempore quae ullam eos cupiditate dicta consequuntur labore qui
+                            excepturi praesentium, incidunt doloribus, provident, nesciunt similique?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
