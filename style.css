@@ -52,9 +52,17 @@ a:focus {
 i,
 span {
     display: inline-block;
+    background: pink;
 }
-
-
+#sidebarCollapse{
+    background-color: pink;
+    border-color:grey;
+}
+.btn{
+    border-color: black;
+    background-color: pink;
+    margin: 10px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -169,6 +177,7 @@ ul ul a {
 
 ul.CTAs {
     padding: 20px;
+    background-color: pink !important;
 }
 
 ul.CTAs a {
@@ -177,6 +186,7 @@ ul.CTAs a {
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
+    background-color: pink !important;
 }
 
 a.download {
