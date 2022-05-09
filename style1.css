@@ -56,6 +56,15 @@ span {
     border-radius: 5px;
     margin: 5px;
 }
+#sidebarCollapse{
+    background-color: pink;
+    border-color:grey;
+}
+.btn{
+    border-color: black;
+    background-color: pink;
+    margin: 10px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
