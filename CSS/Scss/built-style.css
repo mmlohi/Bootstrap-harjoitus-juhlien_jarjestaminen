@@ -4,8 +4,12 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(/images/bouquet-142876.jpg);
+  background-image: url(../../images/bouquet-142876.jpg);
   background-size: cover;
+}
+
+h2 {
+  color: gray;
 }
 
 p {
@@ -13,7 +17,7 @@ p {
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
-  color: grey;
+  color: gray;
 }
 
 a,
@@ -24,13 +28,21 @@ a:focus {
   transition: all 0.3s;
 }
 
+a:visited {
+  border-color: grey;
+}
+
+a:active {
+  color: black;
+}
+
 .navbar {
   padding: 15px 10px;
   background: #fff;
   border: none;
   border-radius: 0;
   margin-bottom: 40px;
-  box-shadow: 1px 1px 3px grey 0, 0, 0, 0.1;
+  box-shadow: 1px 1px 3px gray 0, 0, 0, 0.1;
 }
 
 .navbar-btn {
@@ -54,7 +66,7 @@ span {
 
 #sidebarCollapse {
   background-color: pink;
-  border-color: grey;
+  border-color: gray;
 }
 
 .btn {
@@ -203,11 +215,10 @@ a.article:hover {
   transition: all 0.3s;
 }
 
-.accordion {
-  border-color: grey;
-}
-.accordion h1 {
-  color: grey;
+.accordion-button {
+  background-color: lightgrey;
+  color: black;
+  border-top: black;
 }
 
 /* ---------------------------------------------------
