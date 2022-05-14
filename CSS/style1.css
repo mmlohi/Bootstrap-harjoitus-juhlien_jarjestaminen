@@ -1,11 +1,8 @@
-/*
-    STYLE
-*/
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-  
+    background: #fafafa;
 }
 
 p {
@@ -13,7 +10,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: black;
+    color: #999;
 }
 
 a,
@@ -50,21 +47,7 @@ i,
 span {
     display: inline-block;
 }
-.img{
-    width: 100%;
-    margin: 20px;
-    border-radius: 5px;
-    margin: 5px;
-}
-#sidebarCollapse{
-    background-color: pink;
-    border-color:grey;
-}
-.btn{
-    border-color: black;
-    background-color: pink;
-    margin: 10px;
-}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -77,7 +60,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background:pink;
+    background: #7386D5;
     color: #fff;
     transition: all 0.3s;
 }
@@ -129,7 +112,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: pink;
+    background: #6d7fcc;
 }
 
 #sidebar .sidebar-header strong {
@@ -137,6 +120,10 @@ span {
     font-size: 1.8em;
 }
 
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
 
 #sidebar ul li a {
     padding: 10px;
@@ -145,7 +132,7 @@ span {
 }
 
 #sidebar ul li a:hover {
-    color: pink;
+    color: #7386D5;
     background: #fff;
 }
 
@@ -156,7 +143,7 @@ span {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: lightpink;
+    background: #6d7fcc;
 }
 
 a[data-toggle="collapse"] {
@@ -174,7 +161,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: pink;
+    background: #6d7fcc;
 }
 
 ul.CTAs {
@@ -191,12 +178,12 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: pink;
+    color: #7386D5;
 }
 
 a.article,
 a.article:hover {
-    background: pink!important;
+    background: #6d7fcc !important;
     color: #fff !important;
 }
 
@@ -211,16 +198,11 @@ a.article:hover {
     transition: all 0.3s;
 }
 
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
- 
-    .img{
-        width: 100%;
-    }
     #sidebar {
         min-width: 80px;
         max-width: 80px;

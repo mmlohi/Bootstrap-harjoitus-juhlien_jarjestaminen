@@ -1,65 +1,51 @@
-// JokeAPI
 
-console.log(Object.values(JokeAPI));
+  //Cat Api
 
-JokeAPI.getJokes({
-  jokeType: "single"
+  new Vue({ 
+    el: '#app',
+    vuetify: new Vuetify(),
+    data: {
+        image: { url: ""}
+    },
+    created(){
+        this.loadNextImage();
+    } ,
+    methods:{
+        async loadNextImage()
+        {
+            try{
+                axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY" // Replace this with your API Key
+
+                let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit:1, size:"full" } } ) // Ask for 1 Image, at full resolution
+                
+                this.image = response.data[0] // the response is an Array, so just use the first item as the Image
+
+                console.log("-- Image from TheCatAPI.com")
+                console.log("id:", this.image.id)
+                console.log("url:", this.image.url)
+
+            }catch(err){
+                console.log(err)
+            }
+        }
+    }
 })
-  .then((r) => r.json())
-  .then((data) => {
-    updateUI(data);
+
+// Sidebar/toggle
+$(document).ready(function () {
+
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
   });
 
-// To update the joke on the UI
-function updateUI(jokeData) {
-  const $ = (id) => document.getElementById(id);
+});
 
-  $("joke--text").innerHTML = jokeData.joke;
-}
 
 
 const element = document.getElementById("myBtn");
-element.addEventListener("click", myFunction1);
-
-function myFunction1() {
+element.addEventListener("click", function() {
   document.getElementById("demo").innerHTML = "Katso Amor-veikkoa, kun löysi kaksi heikkoa.";
-}
-
-var x = document.getElementById("myDIV");
-
-
-/*addEventListener() method to attach an "animationstart",
- "animationiteration" and "animationend" event*/
-// Start the animation with JavaScript
-function myFunction() {
-  x.style.WebkitAnimation = "mymove 4s 2"; // Code for Chrome, Safari and Opera
-  x.style.animation = "mymove 4s 2";     // Standard syntax
-}
-
-// Code for Chrome, Safari and Opera
-x.addEventListener("webkitAnimationStart", myStartFunction);
-x.addEventListener("webkitAnimationIteration", myRepeatFunction);
-x.addEventListener("webkitAnimationEnd", myEndFunction);
-
-// Standard syntax
-x.addEventListener("animationstart", myStartFunction);
-x.addEventListener("animationiteration", myRepeatFunction);
-x.addEventListener("animationend", myEndFunction);
-
-function myStartFunction() {
-  this.innerHTML = "animationstart event occured - The animation has started";
-  this.style.backgroundColor = "lightpink";
-}
-
-function myRepeatFunction() {
-  this.innerHTML = "animationiteration event occured - The animation was played again";
-  this.style.backgroundColor = "green";
-}
-
-function myEndFunction() {
-  this.innerHTML = "animationend event occured - The animation has completed";
-  this.style.backgroundColor = "lightgray";
-}
+});
 
 document.getElementById("menubutton").addEventListener("click", showMenu);
 let menu = document.querySelector("#menubutton div");
@@ -69,6 +55,7 @@ function showMenu(event){
     menu.classList.toggle("invisible");
 
 }
+
 
 function insertElement() {
     // Creating a new div element 
@@ -84,3 +71,13 @@ function insertElement() {
     var currentDiv = document.getElementById("main"); 
     document.body.appendChild(newDiv, currentDiv);
 }	
+
+//Simulate a mouseover event:
+
+function myFunction2(event) {
+    const ev = document.createEvent("MouseEvent");
+    ev.initMouseEvent("mouseover", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  
+    document.getElementById("myDiv").dispatchEvent(ev);
+  }
+
