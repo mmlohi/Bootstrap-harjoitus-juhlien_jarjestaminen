@@ -32,11 +32,10 @@
 
 <body>
 
-    <!-- Sidebar  -->
     <!-- My Custom JS -->
     <script src=".././script.js" defer></script>
     <div class="wrapper">
-        <!-- Sidebar  -->
+        <!-- Bootsrap Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Muistilista</h3>
@@ -89,6 +88,7 @@
 
         <!-- Page Content  -->
         <div id="content">
+            <!--Bootsrap navbar-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
@@ -123,50 +123,58 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4>Edellisenä iltana</h4>
-                        <i class="bi bi-list" id="menubutton">
-                            <div class="invisible">
-                                <a href="#">Home</a>
-                                <a href="#">Users</a>
-                                <a href="#">Messages</a>
-                                <a href="#">Contact</a>
-                            </div>
-                        </i>
-
+                        <h4>Edellisenä päivänä</h4>
+                        <br>
+                        <ul id="myList2">
+                            <li>Vieraskirja ja lahjapöytä</li>
+                            <li>Tarjottavien esivalmistelut</li>
+                            <li>Juhlapaikan kattaus ja somistus</li>
+                            <li>Täytekakkujen koristelu tai nouto</li>
+                            <li>Morsiuskimpun ja vieheiden nouto</li>
+                            <li>Äänentoistolaitteiden testaus</li>
+                            <li>Ajoissa nukkumaan!</li>
+                        </ul>
+                        <br>
+                        <p>Kun listalla olevat asiat on huolehdittu järjestyksessä, voit poistaa ne alla olevalla
+                            painikkeella ,ylhäältä alkaen yksi kerrallaan</p>
+                        <button onclick="myFunction2()">Poista</button>
+                        <br>
                     </div>
                     <div class="col-sm-4">
                         <h4>Hääpäivänä</h4>
-                            <br>
-                        <ul id="myList">
-                            
+                        <br>
+                        <ul id="myList3">
                             <li>Lippu salkoon!</li>
                             <li>Valokuvaus yksityiskohdista</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Kiitoskorttikuvaus</li>
+                            <li>Kuka huolehtii kiitoskorttikuvien teettämisen pikana?</li>
+                            <li>Hääauton koristelu</li>
+                            <li>Perhekuvaukset</li>
+                            <li>Kynttilöiden sytytys</li>
                         </ul>
                         <br>
-                        <p>Click the button to remove the child nodes from the list, one by one:</p>
-                        <button onclick="myFunction3()">Try it</button>
-
-                        <p><strong>Note:</strong> Whitespace between nodes is considered text nodes.
-                            Some of the child nodes you remove are invisible white space or line feeds.</p>
+                        <p>Kun listalla olevat asiat on huolehdittu järjestyksessä, voit poistaa ne alla olevalla
+                            painikkeella ,ylhäältä alkaen yksi kerrallaan</p>
+                        <button onclick="myFunction3()">Poista</button>
+                        <br>
                     </div>
-
-
                     <div class="col-sm-4">
                         <h4>Häiden jälkeen</h4>
-                        <li>Kuka huolehtii häälahjat?</li>
-                        <li>Kaasoille ja bestmanille muistamiset</li>
-                        <li>Juhlatilojen siivous</li>
-                        <li>Keittiöväen ja tarjoilijoiden palkat</li>
-                        <li>Ruokien ja juomien pakkaus</li>
-                        <li></li>
-                        <li></li>
+                        <br>
+                        <ul id="myList4">
+                            <li>Kuka huolehtii häälahjat?</li>
+                            <li>Kaasoille ja bestmanille muistamiset</li>
+                            <li>Juhlatilojen siivous</li>
+                            <li>Ruokien ja juomien pakkaus</li>
+                            <li>Lipun lasku</li>
+                            <li>Vuokratilojen avainten palautus</li>
+                            <li>Keittiöväen ja tarjoilijoiden palkat</li>
+                        </ul>
+                        <br>
+                        <p>Kun listalla olevat asiat on huolehdittu järjestyksessä, voit poistaa ne alla olevalla
+                            painikkeella ,ylhäältä alkaen yksi kerrallaan</p>
+                        <button onclick="myFunction4()">Poista</button>
+                        <br>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 
-  //Cat Api
+  //CAT API (muuta.html)
 
   new Vue({ 
     el: '#app',
@@ -31,7 +31,8 @@
     }
 })
 
-// Sidebar/toggle
+// SIDEBAR/TOGGLE (all sides)
+
 $(document).ready(function () {
 
   $('#sidebarCollapse').on('click', function () {
@@ -41,38 +42,33 @@ $(document).ready(function () {
 });
 
 
+//EXECUTE A FUNCTION WHEN A USER CLICKS ON A BUTTON (muuta.html)
 
-const element = document.getElementById("myBtn");
+ // Selecting button element
+ var btn1 = document.getElementById("myBtn1");
+  
+ // Defining custom functions
+ function sayHello() {
+     alert("Kiitos, kun klikkasit, toivottavasti olet pitänyt sivujeni sisällöstä, mukavaa päivää sinulle!");
+ }
+  
+ function setHoverColor() {
+     btn1.style.background = "green";
+ }
+  
+ function setNormalColor() {
+     btn1.style.background = "pink";
+ }
+
+//ATTACH A CLICK EVENT TO A BUTTON (muuta.html)
+
+const element = document.getElementById("myBtn2");
 element.addEventListener("click", function() {
-  document.getElementById("demo").innerHTML = "Katso Amor-veikkoa, kun löysi kaksi heikkoa.";
+  document.getElementById("demo").innerHTML= "Katso Amor-veikkoa, kun löysi kaksi heikkoa.";
 });
 
-document.getElementById("menubutton").addEventListener("click", showMenu);
-let menu = document.querySelector("#menubutton div");
 
-function showMenu(event){
-    event.preventDefault();
-    menu.classList.toggle("invisible");
-
-}
-
-
-function insertElement() {
-    // Creating a new div element 
-    var newDiv = document.createElement("div");
-     
-    // Creating a text node 
-    var newContent = document.createTextNode("Hi, how are you doing?");
-     
-    // Adding the text node to the newly created div
-    newDiv.appendChild(newContent);
-     
-    // Adding the newly created element and its content into the DOM 
-    var currentDiv = document.getElementById("main"); 
-    document.body.appendChild(newDiv, currentDiv);
-}	
-
-//Simulate a mouseover event:
+//CREATE EVENT: SIMULATE A MOUSEOVER EVENT (muuta.html)
 
 function myFunction2(event) {
     const ev = document.createEvent("MouseEvent");
@@ -81,3 +77,22 @@ function myFunction2(event) {
     document.getElementById("myDiv").dispatchEvent(ev);
   }
 
+  	function insertElement() {
+		// Creating a new div element 
+		var newDiv = document.createElement("div");
+		 
+		// Creating a text node 
+		var newContent = document.createTextNode("oot rakas");
+		 
+		// Adding the text node to the newly created div
+		newDiv.appendChild(newContent);
+		 
+		// Adding the newly created element and its content into the DOM 
+		var currentDiv = document.getElementById("main"); 
+		document.body.appendChild(newDiv, currentDiv);
+	}	
+
+  // Assigning event listeners to the button
+btn1.addEventListener("click", sayHello);
+btn1.addEventListener("mouseover", setHoverColor);
+btn1.addEventListener("mouseout", setNormalColor);

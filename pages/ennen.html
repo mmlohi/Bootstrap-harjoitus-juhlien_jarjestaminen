@@ -19,7 +19,6 @@
 
 
     <!-- My Custom CSS -->
-    <!--<link rel="stylesheet" href="/CSS/style.css">-->
     <link rel="stylesheet" href="../css/Scss/built-style.css">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -35,7 +34,7 @@
     <!-- My Custom JS -->
     <script src=".././script.js" defer></script>
     <div class="wrapper">
-        <!-- Sidebar  -->
+        <!-- Bootstrap sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Muistilista</h3>
@@ -88,6 +87,7 @@
 
         <!-- Page Content  -->
         <div id="content">
+            <!--Bootstrap navbar-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </nav>
-            <!--Accordion-->
+            <!--Bootsrap accordion-->
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -164,13 +164,22 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            https://www.sinelli.fi/askarteluideat/haskartelu/hjuhlien-kutsukortit
-                            https://www.sinelli.fi/askarteluideat/haskartelu/hjuhlien-kutsukortit
-                            https://kotiliesi.fi/juhlat/haat-ja-kihlajaiset/haat-ja-niiden-kutsukortit/
-                            https://www.haat.fi/artikkeli/tee-itse-rustiikkiset-haakutsut
-                            https://www.haat.fi/haainspiraatio/haakutsut
-                            https://www.haat.fi/artikkeli/miten-haakutsuun-kirjoitetaan-kutsun-saajien-nimet
-                            https://kalligrafiastudio.com/blog/nain-kirjoitat-persoonalliset-ja-tunnelmalliset-haakutsutekstit
+                            <input type="button" class="btn" value="Hääjuhlien kutsukortit"
+                                onclick="window.open('https://www.sinelli.fi/askarteluideat/haskartelu/hjuhlien-kutsukortit', '_blank');" />
+                                <input type="button" class="btn" value="Vinkit kutsukortteihin"
+                                onclick="window.open('https://kotiliesi.fi/juhlat/haat-ja-kihlajaiset/haat-ja-niiden-kutsukortit/', '_blank');" />
+                                <input type="button" class="btn" value="Tee itse rustiikkiset hääkutsut"
+                                onclick="window.open('https://www.haat.fi/artikkeli/tee-itse-rustiikkiset-haakutsut', '_blank');" />
+                                <input type="button" class="btn" value="Hääkutsut"
+                                onclick="window.open('https://www.haat.fi/haainspiraatio/haakutsut', '_blank');" />
+                                <input type="button" class="btn" value="Bestman on sulhasen luottomies"
+                                onclick="window.open('https://www.haat.fi/artikkeli/bestman-on-sulhasen-luottomies', '_blank');" />
+                                <input type="button" class="btn" value="Näin kirjoitat tekstin hääkutsuun"
+                                onclick="window.open(' https://kalligrafiastudio.com/blog/nain-kirjoitat-persoonalliset-ja-tunnelmalliset-haakutsutekstit', '_blank');" />
+                                <input type="button" class="btn" value="Kaasojen ja bestmanin tehtävät"
+                                onclick="window.open('https://diiskuneiti.vaikuttajamedia.fi/2017/07/04/muistilista-kaasoille-ja-bestmaneille/', '_blank');" />
+                                <input type="button" class="btn" value="Kaason muistilista"
+                                onclick="window.open('https://anna.fi/ihmiset-ja-suhteet/ihmissuhteet/mita-kaason-tehtaviin-kuuluu-ota-avuksi-tama-kaason-muistilista', '_blank');" />
                         </div>
                     </div>
                 </div>
@@ -253,7 +262,8 @@
                                 onclick="window.open('https://riiakoivisto.vaikuttajamedia.fi/2021/06/04/ammattilaisen-vinkit-morsiuskimpun-meikin-ja-kampauksen-valintaan/', '_blank');" /> 
                             <input type="button" class="btn" value="Sormusperinne"
                                 onclick="window.open('https://www.haat.fi/artikkeli/suomalainen-kihlasormusperinne-on-maailmalla-erikoinen', '_blank');" />
-                        </div>
+                            
+                            </div>
                     </div>
                 </div>
             </div>

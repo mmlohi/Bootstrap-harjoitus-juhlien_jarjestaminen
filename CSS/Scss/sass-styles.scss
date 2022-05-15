@@ -5,10 +5,13 @@ $border-color: gray;
 $background-color: pink;
 $accordion-border-color: black;
 $accordion-button-color: black;
+$theme-colors:green;
+$color:black;
 
 @mixin theme($theme: grey) {
     border-color: $theme;
-
+    font: $color;
+    background-color: $theme-colors;
 }
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -232,13 +235,18 @@ a.article:hover {
     background-color: $background-color;
     border-color: solid 2px black;
     border-radius: 5px;
+    
+}
+.btn:hover{
+    background-color:green;
+    border-color: $border-color;
 }
 
-#myDIV {
+#myDIV1 {
     margin: 25px;
     width: 550px;
     height: 100px;
-    background:$background-color;
+    background: green;
     position: relative;
     font-size: 20px;
   }
@@ -254,11 +262,45 @@ a.article:hover {
     to {top: 200px;}
   }
 
-#myBtn{
+#myBtn1, #myBtn2{
     background-color: $background-color;
-    border-color: solid 2px black;
+    border-color:solid 2px $border-color;
     border-radius: 5px;
 }
+
+// ANIMAATIO (kuvia.html)
+
+#alue { 
+    /* säädetään alueelle koko ja varmistetaan, että mahdollinen liian
+    suuri sisältö piilotetaan ylimenevältä osalta */
+      max-width: 100%;
+      min-height: 200px;
+      max-height: 200px;
+      overflow: hidden;
+    }
+    h1 {
+       margin: 0;
+       padding: 0;
+       /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
+          eestaas */
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       /* animaatiossa käytetyn keyframes-lohkon nimi */
+       animation-name: move;
+    
+    }
+    @keyframes move {
+     /* mistä animoidaan */
+      from {
+        font-size: 1em;
+      }
+     /* mihin animoidaan */
+      to {
+        font-size: 10em;
+      }
+    }
+    
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
