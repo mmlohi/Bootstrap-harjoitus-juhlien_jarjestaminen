@@ -10,7 +10,6 @@ $color:black;
 
 @mixin theme($theme: grey) {
     border-color: $theme;
-    font: $color;
     background-color: $theme-colors;
 }
 
@@ -24,7 +23,7 @@ body {
 }
 
 div > h2, h3{
-    color: $border-color;
+    color: black;
 }
 div > p {
     font-family: 'Poppins', sans-serif;
@@ -34,6 +33,22 @@ div > p {
     color: $border-color;
   }
 
+[id=content1]{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:solid 2px black;
+    padding: 15px;
+}
+
+h4~ul{
+    background-color:$background-color;
+    border-radius: 5px;
+
+}
+.vari1{
+    color: green;
+    font-size: 25px;
+}
 a,
 a:hover,
 a:focus {
@@ -229,7 +244,7 @@ a.article:hover {
     border-color: $border-color;
 }
 
-.btn:hover::after{
+.btn:hover:active{
     background-color:grey;
     border-color: $border-color;
 }
@@ -259,6 +274,27 @@ a.article:hover {
     border-radius: 5px;
 }
 
+.textcolor{
+    color:green;
+}
+
+#mouseTarget {
+    box-sizing: border-box;
+    width:250px;
+    border: 2px solid #333;
+    background-color: green;
+  }
+#special{
+    background-color: pink;
+    font-size:20px;
+    color:black;
+    padding: 10px;
+    font-style: italic;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 5px;
+
+}
 // ANIMAATIO (kuvia.html)
 
 #alue { 

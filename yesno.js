@@ -64,7 +64,7 @@ $(document).ready(function () {
 
 const element = document.getElementById("myBtn2");
 element.addEventListener("click", function() {
-  document.getElementById("demo").innerHTML= "Katso Amor-veikkoa, kun löysi kaksi heikkoa.";
+  document.getElementById("demo1").innerHTML= "Katso Amor-veikkoa, kun löysi kaksi heikkoa.";
 });
 
 
@@ -77,22 +77,42 @@ function myFunction2(event) {
     document.getElementById("myDiv").dispatchEvent(ev);
   }
 
-  	function insertElement() {
-		// Creating a new div element 
-		var newDiv = document.createElement("div");
-		 
-		// Creating a text node 
-		var newContent = document.createTextNode("oot rakas");
-		 
-		// Adding the text node to the newly created div
-		newDiv.appendChild(newContent);
-		 
-		// Adding the newly created element and its content into the DOM 
-		var currentDiv = document.getElementById("main"); 
-		document.body.appendChild(newDiv, currentDiv);
-	}	
 
-  // Assigning event listeners to the button
+// Assigning event listeners to the button
 btn1.addEventListener("click", sayHello);
 btn1.addEventListener("mouseover", setHoverColor);
 btn1.addEventListener("mouseout", setNormalColor);
+
+
+var enterEventCount = 0;
+var leaveEventCount = 0;
+const mouseTarget = document.getElementById('mouseTarget');
+const unorderedList = document.getElementById('unorderedList');
+
+mouseTarget.addEventListener('mouseenter', e => {
+  mouseTarget.style.border = '5px dotted orange';
+  enterEventCount++;
+  addListItem('Kiitos sinulle! ' + enterEventCount + '.');
+});
+
+mouseTarget.addEventListener('mouseleave', e => {
+  mouseTarget.style.border = '1px solid #333';
+  leaveEventCount++;
+  addListItem('Nähdään taas! ' + leaveEventCount + '.');
+});
+
+//MOUSEENTER EVENT
+
+function addListItem(text) {
+  // Create a new text node using the supplied text
+  var newTextNode = document.createTextNode(text);
+
+  // Create a new li element
+  var newListItem = document.createElement("li");
+
+  // Add the text node to the li element
+  newListItem.appendChild(newTextNode);
+
+  // Add the newly created list item to list
+  unorderedList.appendChild(newListItem);
+}

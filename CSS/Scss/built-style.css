@@ -10,7 +10,7 @@ body {
 }
 
 div > h2, h3 {
-  color: gray;
+  color: black;
 }
 
 div > p {
@@ -19,6 +19,23 @@ div > p {
   font-weight: 300;
   line-height: 1.7em;
   color: gray;
+}
+
+[id=content1] {
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: solid 2px black;
+  padding: 15px;
+}
+
+h4 ~ ul {
+  background-color: pink;
+  border-radius: 5px;
+}
+
+.vari1 {
+  color: green;
+  font-size: 25px;
 }
 
 a,
@@ -210,6 +227,11 @@ a.article:hover {
   border-color: gray;
 }
 
+.btn:hover:active {
+  background-color: grey;
+  border-color: gray;
+}
+
 #myDIV1 {
   width: 420px;
   height: 100px;
@@ -239,6 +261,28 @@ a.article:hover {
 #myBtn1, #myBtn2 {
   background-color: pink;
   border-color: solid 2px gray;
+  border-radius: 5px;
+}
+
+.textcolor {
+  color: green;
+}
+
+#mouseTarget {
+  box-sizing: border-box;
+  width: 250px;
+  border: 2px solid #333;
+  background-color: green;
+}
+
+#special {
+  background-color: pink;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  font-style: italic;
+  border: solid 1px;
+  border-color: black;
   border-radius: 5px;
 }
 

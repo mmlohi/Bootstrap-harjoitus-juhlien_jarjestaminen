@@ -72,12 +72,14 @@ function myFunction3() {
    this.style.backgroundColor = "lightgray";
  }
 
-var h = document.querySelector("h3");
-var newElement = document.createElement("p");
-h.parentNode.insertBefore(newElement, h);
+//onmouseenter Event
+ function mouseEnter() {
+  document.getElementById("demo3").style.color = "pink";
+}
 
+function mouseLeave() {
+  document.getElementById("demo3").style.color = "black";
+}
 
-let a = document.getElementById("myList4")
-
-a.stylecolor = "red";
-a.style.backgroundColor = "lightgray";
+document.getElementById("teksti1").innerHTML = 
+       "Tämä sivu sisältää pari linkkiä kuvauksiin liittyen";
