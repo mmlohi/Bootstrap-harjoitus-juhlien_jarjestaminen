@@ -5,13 +5,9 @@ $border-color: gray;
 $background-color: pink;
 $accordion-border-color: black;
 $accordion-button-color: black;
-$theme-colors:green;
 $color:black;
 
-@mixin theme($theme: grey) {
-    border-color: $theme;
-    background-color: $theme-colors;
-}
+
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
@@ -23,7 +19,7 @@ body {
 }
 
 div > h2, h3{
-    color: black;
+    color: $color;
 }
 div > p {
     font-family: 'Poppins', sans-serif;
@@ -36,7 +32,7 @@ div > p {
 [id=content1]{
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border:solid 2px black;
+    border:solid 2px $color;
     padding: 15px;
 }
 
@@ -94,7 +90,7 @@ span {
 }
 
 .btn {
-    border-color: black;
+    border-color: $color;
     background-color: $background-color;
     margin: 15px;
 }
@@ -285,7 +281,7 @@ a.article:hover {
     background-color: green;
   }
 #special{
-    background-color: pink;
+    background-color: $background-color;
     font-size:20px;
     color:black;
     padding: 10px;
