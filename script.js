@@ -1,4 +1,4 @@
-// Sidebar/toggle
+// Sidebar/toggle (all sides)
 $(document).ready(function () {
 
     $('#sidebarCollapse').on('click', function () {
@@ -7,8 +7,7 @@ $(document).ready(function () {
 
 });
 
-
-// remove the child nodes from the list (h-hetkenä.html)
+// REMOVE THE CHILD NODES FROM THE LIST (h-hetkenä.html)
 
 function myFunction2() {
   const element = document.getElementById("myList2");
@@ -36,7 +35,7 @@ function myFunction3() {
 
 
  /*addEventListener() method to attach an "animationstart",
- "animationiteration" and "animationend" event*/
+ "animationiteration" and "animationend" event (jälkeen.html)*/ 
   
  
  var x = document.getElementById("myDIV1");
@@ -72,7 +71,8 @@ function myFunction3() {
    this.style.backgroundColor = "lightgray";
  }
 
-//onmouseenter Event
+//ONMOUSEENTER EVENT (index.html h2)
+
  function mouseEnter() {
   document.getElementById("demo3").style.color = "pink";
 }
@@ -81,5 +81,7 @@ function mouseLeave() {
   document.getElementById("demo3").style.color = "black";
 }
 
-document.getElementById("teksti1").innerHTML = 
-       "Tämä sivu sisältää pari linkkiä kuvauksiin liittyen";
+document.getElementById("teksti1").style.color = "blue";
+
+
+

@@ -85,6 +85,10 @@ span {
   margin: 15px;
 }
 
+.accordion-button {
+  background-color: lightgrey;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -224,11 +228,6 @@ a.article:hover {
 
 .btn:hover {
   background-color: green;
-  border-color: gray;
-}
-
-.btn:hover:active {
-  background-color: grey;
   border-color: gray;
 }
 

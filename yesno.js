@@ -78,11 +78,14 @@ function myFunction2(event) {
   }
 
 
-// Assigning event listeners to the button
+// ASSINGNING EVENT LISTENERS TO THE BUTTON (muuta.html/alert)
+
 btn1.addEventListener("click", sayHello);
 btn1.addEventListener("mouseover", setHoverColor);
 btn1.addEventListener("mouseout", setNormalColor);
 
+
+//MOUSEENTER EVENT (muuta.html)
 
 var enterEventCount = 0;
 var leaveEventCount = 0;
@@ -90,7 +93,7 @@ const mouseTarget = document.getElementById('mouseTarget');
 const unorderedList = document.getElementById('unorderedList');
 
 mouseTarget.addEventListener('mouseenter', e => {
-  mouseTarget.style.border = '5px dotted orange';
+  mouseTarget.style.border = '5px dotted pink';
   enterEventCount++;
   addListItem('Kiitos sinulle! ' + enterEventCount + '.');
 });
@@ -100,8 +103,6 @@ mouseTarget.addEventListener('mouseleave', e => {
   leaveEventCount++;
   addListItem('Nähdään taas! ' + leaveEventCount + '.');
 });
-
-//MOUSEENTER EVENT
 
 function addListItem(text) {
   // Create a new text node using the supplied text
@@ -116,3 +117,9 @@ function addListItem(text) {
   // Add the newly created list item to list
   unorderedList.appendChild(newListItem);
 }
+
+// CHANGE THE COLOR OF THE H3 AND ITS ALIGN THE PAGE (muuta.html)
+
+const title = document.getElementsByTagName('h3')[1];
+title.style.color = 'green'
+title.style.textAlign = 'center';
