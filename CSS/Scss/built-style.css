@@ -157,7 +157,7 @@ span {
 #sidebar ul li.active > a,
 a[aria-expanded=true] {
   color: #fff;
-  background: lightpink;
+  background: pink;
 }
 
 a[data-toggle=collapse] {
@@ -178,20 +178,6 @@ ul ul a {
   background: pink;
 }
 
-ul.CTAs {
-  padding: 20px;
-  background-color: pink !important;
-}
-
-ul.CTAs a {
-  text-align: center;
-  font-size: 0.9em !important;
-  display: block;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  background-color: pink !important;
-}
-
 a.download {
   background: #fff;
   color: pink;
@@ -199,7 +185,7 @@ a.download {
 
 a.article,
 a.article:hover {
-  background: pink !important;
+  background: pink;
   color: #fff !important;
 }
 
@@ -225,12 +211,12 @@ a.article:hover {
 }
 
 #myDIV1 {
-  margin: 25px;
-  width: 550px;
+  width: 420px;
   height: 100px;
   background: green;
   position: relative;
   font-size: 20px;
+  padding: 5px;
 }
 
 /* Chrome, Safari, Opera */
@@ -351,6 +337,13 @@ h1 {
 
   .img {
     size: 100%;
+  }
+
+  #myDIV1 {
+    width: 100%;
+    background: lawngreen;
+    position: relative;
+    font-size: 15px;
   }
 }
 

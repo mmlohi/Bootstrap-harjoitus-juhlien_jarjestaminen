@@ -72,6 +72,9 @@ function myFunction3() {
    this.style.backgroundColor = "lightgray";
  }
 
+var h = document.querySelector("h3");
+var newElement = document.createElement("p");
+h.parentNode.insertBefore(newElement, h);
 
 
 let a = document.getElementById("myList4")

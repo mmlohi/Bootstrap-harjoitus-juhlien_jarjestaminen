@@ -95,7 +95,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background:pink;
+    background:$background-color;
     color: #fff;
     transition: all 0.3s;
 }
@@ -147,7 +147,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: pink;
+    background:$background-color;
 }
 
 #sidebar .sidebar-header strong {
@@ -163,7 +163,7 @@ span {
 }
 
 #sidebar ul li a:hover {
-    color: pink;
+    color: $background-color;
     background: #fff;
 }
 
@@ -174,7 +174,7 @@ span {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: lightpink;
+    background: $background-color;
 }
 
 a[data-toggle="collapse"] {
@@ -192,31 +192,18 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: pink;
+    background: $background-color;
 }
 
-ul.CTAs {
-    padding: 20px;
-    background-color: pink !important;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    background-color: pink !important;
-}
 
 a.download {
     background: #fff;
-    color: pink;
+    color: $background-color;
 }
 
 a.article,
 a.article:hover {
-    background: pink!important;
+    background: $background-color;
     color: #fff !important;
 }
 /* ---------------------------------------------------
@@ -242,13 +229,17 @@ a.article:hover {
     border-color: $border-color;
 }
 
+.btn:hover::after{
+    background-color:grey;
+    border-color: $border-color;
+}
 #myDIV1 {
-    margin: 25px;
-    width: 550px;
+    width: 420px;
     height: 100px;
     background: green;
     position: relative;
     font-size: 20px;
+    padding: 5px;
   }
   
   /* Chrome, Safari, Opera */
@@ -354,4 +345,10 @@ a.article:hover {
 .img{
     size: 100%;
 }
+#myDIV1 {
+    width:100%;
+    background: lawngreen;
+    position: relative;
+    font-size: 15px;
+  }
 }
