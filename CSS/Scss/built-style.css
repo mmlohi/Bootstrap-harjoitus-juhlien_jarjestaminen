@@ -388,6 +388,10 @@ h1 {
     position: relative;
     font-size: 15px;
   }
+    p {
+        color:black;
+    }
+    
 }
 
 /*# sourceMappingURL=built-style.css.map */
