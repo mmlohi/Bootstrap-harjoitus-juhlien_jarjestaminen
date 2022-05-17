@@ -32,9 +32,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-
-  
-
 </head>
 
 <body>
@@ -42,153 +39,162 @@
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <!-- My Custom JS -->
     <script src=".././yesno.js" defer></script>
-    
-    <div id="app">
-        <div class="wrapper">
-            <!-- Sidebar  -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Muistilista</h3>
-                    <strong>M</strong>
+
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Muistilista</h3>
+                <strong>M</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Häät
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="ennen.html">Ennen</a>
+                        </li>
+                        <li>
+                            <a href="h-hetkenä.html">H-hetkenä</a>
+                        </li>
+                        <li>
+                            <a href="jälkeen.html">Jälkeen</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="mietelauseita.html">
+                        <i class="fas fa-briefcase"></i>
+                        Miete-<br>
+                        lauseita
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Linkit
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="hääoppaat.html">Oppaat</a>
+                        </li>
+                        <li>
+                            <a href="kuvia.html">Kuvia</a>
+                        </li>
+                        <li>
+                            <a href="muuta.html">Muuta</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Valikko</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Etusivu</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                    href="https://www.naimisiin.info/haaopas/muistiprint.html">Tulostettava
+                                    muistilista</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="ideakuvia.html">Ideakuvia</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-home"></i>
-                            Häät
-                        </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li>
-                                <a href="ennen.html">Ennen</a>
-                            </li>
-                            <li>
-                                <a href="h-hetkenä.html">H-hetkenä</a>
-                            </li>
-                            <li>
-                                <a href="jälkeen.html">Jälkeen</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="mietelauseita.html">
-                            <i class="fas fa-briefcase"></i>
-                            Miete-<br>
-                            lauseita
-                        </a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-copy"></i>
-                            Linkit
-                        </a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="hääoppaat.html">Oppaat</a>
-                            </li>
-                            <li>
-                                <a href="kuvia.html">Kuvia</a>
-                            </li>
-                            <li>
-                                <a href="muuta.html">Muuta</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                </ul>
             </nav>
-
-            <!-- Page Content  -->
-            <div id="content">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span>Valikko</span>
-                        </button>
-                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button"
-                            data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="../index.html">Etusivu</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link"
-                                        href="https://www.naimisiin.info/haaopas/muistiprint.html">Tulostettava
-                                        muistilista</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="ideakuvia.html">Ideakuvia</a>
-                                </li>
+            <div class="container">
+                <h3>Tämä sivu sisältää huumoria:</h3>
+                <br>
+                <div id="teksti2">
+                    <p><button onclick="myFunction2(event)">Heiluttele hiirtä alapuolella olevan vaaleanpunaisen
+                            palkin
+                            päällä</button>
+                    </p>
+                </div>
+                <div id="myDiv" style="padding:50px;background-color:lightpink;"
+                    onmouseover="this.innerHTML += '&hearts;';">
+                </div>
+                <div class="row ">
+                    <div class="col"> <button id="myBtn1" class="btn btn-default btn-lg">Klikkaa tästä,
+                            kiitos!</button></div>
+                    <div class="col">
+                        <div id='mouseTarget'>
+                            <ul id="unorderedList">
+                                <li>Silitä minua hiukan!</li>
                             </ul>
                         </div>
                     </div>
-                </nav>
-                <div class="container">
-
-                    <h3>Tämä sivu sisältää huumoria:</h3>
-                    <br><br>
-                    <button id="myBtn1" class="btn btn-default btn-lg">Klikkaa tästä, kiitos!</button>
-                    <br>
-                    <br>
-                    <button id="myBtn2"class="btn btn-default btn-lg">Klikkaa myös minua!</button>
-                    <p id="demo1">
-                        <br>
-
-                        <div id='mouseTarget'>
-                            <ul id="unorderedList">
-                             <li>Silitä minua hiukan!</li>
-                            </ul>
-                           </div>
-                        <br>
-                    <p><button onclick="myFunction2(event)">Heiluttele hiirtä alapuolella olevan vaaleanpunaisen palkin
-                            päällä</button>
-                    </p>
-                    <div id="myDiv" style="padding:50px;background-color:lightpink;"
-                        onmouseover="this.innerHTML += '&hearts;';">
+                    <div class="col"> <button id="myBtn2" class="btn btn-default btn-lg">Klikkaa myös
+                            minua!</button>
+                        <p id="demo1">
                     </div>
-                    <v-app>
-                        <v-content>
-                            <v-container>
-                                <v-layout align-center justify-center>
-                                    <v-btn color="lightgray" dark large @click="loadNextImage">
-                                        <br>
-                                        Painele tästä &hearts; <v-icon></v-icon>
-                                    </v-btn>
-                                </v-layout>
-                                <br>
-                                <v-layout row wrap>
-                                    <v-flex xs12>
-                                        <v-card flat tile class="d-flex">
-                                            <v-img :src="image.url" contain>
-                                            </v-img>
-                                        </v-card>
-                                    </v-flex>
-                                </v-layout>
-
-                            </v-container>
-                        </v-content>
-                    </v-app>
-
                 </div>
             </div>
+
+            <div id="app">
+                <v-app>
+                    <v-content>
+                        <v-container>
+                            <v-layout align-center justify-center>
+                                <v-btn color="lightgray" dark large @click="loadNextImage">
+                                    <br>
+                                    Painele tästä &hearts; <v-icon></v-icon>
+                                </v-btn>
+                            </v-layout>
+                            <br>
+                            <v-layout row wrap>
+                                <v-flex xs12>
+                                    <v-card flat tile class="d-flex">
+                                        <v-img :src="image.url" contain>
+                                        </v-img>
+                                    </v-card>
+                                </v-flex>
+                            </v-layout>
+
+                        </v-container>
+                    </v-content>
+                </v-app>
+            </div>
+            <span>&copy; mmlohi</span>
         </div>
-        <!-- jQuery CDN - Slim version (=without AJAX) -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <!-- Popper.JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-            crossorigin="anonymous"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-            crossorigin="anonymous"></script>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 
 </body>
 
