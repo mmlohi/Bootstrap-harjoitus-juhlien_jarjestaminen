@@ -5,7 +5,7 @@ $border-color: gray;
 $background-color: pink;
 $accordion-border-color: black;
 $accordion-button-color: black;
-$color:black;
+$color: black;
 
 
 
@@ -18,41 +18,9 @@ body {
     background-size: cover;
 }
 
-div > h2, h3{
-    color: $color;
-}
-div > p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: $border-color;
-  }
-
-[id=content1]{
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border:solid 2px $color;
-    padding: 15px;
-}
-
-h4~ul{
-    background-color:$background-color;
-    border-radius: 5px;
-
-}
-.vari1{
-    color: green;
-    font-size: 25px;
-}
-
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
 
 .navbar {
     padding: 15px 10px;
@@ -89,14 +57,6 @@ span {
     border-color: $border-color;
 }
 
-.btn {
-    border-color: $color;
-    background-color: $background-color;
-    margin: 15px;
-}
-.accordion-button{
-    background-color: lightgrey;
-}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -110,7 +70,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background:$background-color;
+    background: $background-color;
     color: #fff;
     transition: all 0.3s;
 }
@@ -162,7 +122,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background:$background-color;
+    background: $background-color;
 }
 
 #sidebar .sidebar-header strong {
@@ -221,6 +181,7 @@ a.article:hover {
     background: $background-color;
     color: #fff !important;
 }
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -233,17 +194,68 @@ a.article:hover {
 
 }
 
-.button{
+div>h2,
+h3 {
+    color: $color;
+}
+
+div>p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: $border-color;
+}
+
+[id=content1] {
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid 2px $color;
+    padding: 15px;
+}
+
+h4~ul {
+    background-color: $background-color;
+    border-radius: 5px;
+
+}
+
+.vari1 {
+    color: green;
+    font-size: 25px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.button {
     background-color: $background-color;
     border-color: solid 2px black;
     border-radius: 5px;
-    
+
 }
-.btn:hover{
-    background-color:green;
+
+.btn:hover {
+    background-color: green;
     border-color: $border-color;
 }
 
+.btn {
+    border-color: $color;
+    background-color: $background-color;
+    margin: 15px;
+}
+
+.accordion-button {
+    background-color: lightgrey;
+}
+
+//Animaatio (jälkeen.html)
 #myDIV1 {
     width: 420px;
     height: 100px;
@@ -251,39 +263,52 @@ a.article:hover {
     position: relative;
     font-size: 20px;
     padding: 5px;
-  }
-  
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
-  }
-  
-  @keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
-  }
+}
 
-#myBtn1, #myBtn2{
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+
+#myBtn1,
+#myBtn2 {
     background-color: $background-color;
-    border-color:solid 2px $border-color;
+    border-color: solid 2px $border-color;
     border-radius: 5px;
 }
 
-.textcolor{
-    color:green;
+.textcolor {
+    color: green;
 }
 
 #mouseTarget {
     box-sizing: border-box;
-    width:250px;
+    width: 250px;
     border: 2px solid #333;
     background-color: green;
-  }
-#special{
+}
+
+#special {
     background-color: $background-color;
-    font-size:20px;
-    color:black;
+    font-size: 20px;
+    color: black;
     padding: 10px;
     font-style: italic;
     border: solid 1px;
@@ -291,39 +316,44 @@ a.article:hover {
     border-radius: 5px;
 
 }
+
 // ANIMAATIO (kuvia.html)
 
-#alue { 
+#alue {
     /* säädetään alueelle koko ja varmistetaan, että mahdollinen liian
     suuri sisältö piilotetaan ylimenevältä osalta */
-      max-width: 100%;
-      min-height: 200px;
-      max-height: 200px;
-      overflow: hidden;
-    }
-    h1 {
-       margin: 0;
-       padding: 0;
-       /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
           eestaas */
-       animation-duration: 4s;
-       animation-iteration-count: infinite;
-       animation-direction: alternate;
-       /* animaatiossa käytetyn keyframes-lohkon nimi */
-       animation-name: move;
-    
-    }
-    @keyframes move {
-     /* mistä animoidaan */
-      from {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animaatiossa käytetyn keyframes-lohkon nimi */
+    animation-name: move;
+
+}
+
+@keyframes move {
+
+    /* mistä animoidaan */
+    from {
         font-size: 1em;
-      }
-     /* mihin animoidaan */
-      to {
-        font-size: 10em;
-      }
     }
-    
+
+    /* mihin animoidaan */
+    to {
+        font-size: 10em;
+    }
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -334,6 +364,7 @@ a.article:hover {
         text-align: center;
         margin-left: -80px !important;
     }
+
     .dropdown-toggle::after {
         top: auto;
         bottom: 10px;
@@ -342,45 +373,62 @@ a.article:hover {
         -ms-transform: translateX(50%);
         transform: translateX(50%);
     }
+
     #sidebar.active {
         margin-left: 0 !important;
     }
+
     #sidebar .sidebar-header h3,
     #sidebar .CTAs {
         display: none;
     }
+
     #sidebar .sidebar-header strong {
         display: block;
     }
+
     #sidebar ul li a {
         padding: 20px 10px;
+
+        span {
+            font-size: 0.85em;
+
+            i {
+                margin-right: 0;
+                display: block;
+            }
+        }
     }
-    #sidebar ul li a span {
-        font-size: 0.85em;
-    }
-    #sidebar ul li a i {
-        margin-right: 0;
-        display: block;
-    }
+
     #sidebar ul ul a {
         padding: 10px !important;
+
+        i {
+            font-size: 1.3em;
+        }
+
     }
-    #sidebar ul li a i {
-        font-size: 1.3em;
-    }
+
     #sidebar {
         margin-left: 0;
     }
+
     #sidebarCollapse span {
         display: none;
     }
-.img{
-    size: 100%;
-}
-#myDIV1 {
-    width:100%;
-    background: lawngreen;
-    position: relative;
-    font-size: 15px;
-  }
+
+    .img {
+        size: 100%;
+    }
+
+    #myDIV1 {
+        width: 100%;
+        background: lawngreen;
+        position: relative;
+        font-size: 15px;
+    }
+
+    .p {
+        color: black;
+    }
 }
