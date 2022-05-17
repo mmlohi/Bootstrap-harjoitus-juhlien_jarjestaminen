@@ -1,5 +1,4 @@
-
-  //CAT API (muuta.html)
+//CAT API (muuta.html)
 
   new Vue({ 
     el: '#app',
@@ -31,6 +30,8 @@
     }
 })
 
+
+
 // SIDEBAR/TOGGLE (all sides)
 
 $(document).ready(function () {
@@ -40,6 +41,9 @@ $(document).ready(function () {
   });
 
 });
+
+
+
 
 
 //EXECUTE A FUNCTION WHEN A USER CLICKS ON A BUTTON (muuta.html)
@@ -60,12 +64,17 @@ $(document).ready(function () {
      btn1.style.background = "pink";
  }
 
+
+
+
 //ATTACH A CLICK EVENT TO A BUTTON (muuta.html)
 
 const element = document.getElementById("myBtn2");
 element.addEventListener("click", function() {
   document.getElementById("demo1").innerHTML= "Katso Amor-veikkoa, kun löysi kaksi heikkoa.";
 });
+
+
 
 
 //CREATE EVENT: SIMULATE A MOUSEOVER EVENT (muuta.html)
@@ -78,11 +87,15 @@ function myFunction2(event) {
   }
 
 
+
+
 // ASSINGNING EVENT LISTENERS TO THE BUTTON (muuta.html/alert)
 
 btn1.addEventListener("click", sayHello);
 btn1.addEventListener("mouseover", setHoverColor);
 btn1.addEventListener("mouseout", setNormalColor);
+
+
 
 
 //MOUSEENTER EVENT (muuta.html)
@@ -95,13 +108,13 @@ const unorderedList = document.getElementById('unorderedList');
 mouseTarget.addEventListener('mouseenter', e => {
   mouseTarget.style.border = '5px dotted pink';
   enterEventCount++;
-  addListItem('Kiitos sinulle! ' + enterEventCount + '.');
+  addListItem('Vielä vähän, please! Tämä oli pyyntö nro ' + enterEventCount + '.');
 });
 
 mouseTarget.addEventListener('mouseleave', e => {
   mouseTarget.style.border = '1px solid #333';
   leaveEventCount++;
-  addListItem('Nähdään taas! ' + leaveEventCount + '.');
+  addListItem('Kiitos sinulle! Tämä oli kiitos nro' + leaveEventCount + '.');
 });
 
 function addListItem(text) {
@@ -118,8 +131,10 @@ function addListItem(text) {
   unorderedList.appendChild(newListItem);
 }
 
+
+
 // CHANGE THE COLOR OF THE H3 AND ITS ALIGN THE PAGE (muuta.html)
 
 const title = document.getElementsByTagName('h3')[1];
-title.style.color = 'green'
+title.style.color = 'green';
 title.style.textAlign = 'center';
