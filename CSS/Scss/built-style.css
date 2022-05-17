@@ -9,43 +9,9 @@ body {
   background-size: cover;
 }
 
-div > h2, h3 {
-  color: black;
-}
-
-div > p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.7em;
-  color: gray;
-}
-
-[id=content1] {
-  font-style: italic;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border: solid 2px black;
-  padding: 15px;
-}
-
-h4 ~ ul {
-  background-color: pink;
-  border-radius: 5px;
-}
-
-.vari1 {
-  color: green;
-  font-size: 25px;
-}
-
-a,
-a:hover,
-a:focus {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
 .navbar {
   padding: 15px 10px;
   background: #fff;
@@ -77,16 +43,6 @@ span {
 #sidebarCollapse {
   background-color: pink;
   border-color: gray;
-}
-
-.btn {
-  border-color: black;
-  background-color: pink;
-  margin: 15px;
-}
-
-.accordion-button {
-  background-color: lightgrey;
 }
 
 /* ---------------------------------------------------
@@ -220,6 +176,44 @@ a.article:hover {
   transition: all 0.3s;
 }
 
+div > h2,
+h3 {
+  color: black;
+}
+
+div > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: gray;
+}
+
+[id=content1] {
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: solid 2px black;
+  padding: 15px;
+}
+
+h4 ~ ul {
+  background-color: pink;
+  border-radius: 5px;
+}
+
+.vari1 {
+  color: green;
+  font-size: 25px;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
 .button {
   background-color: pink;
   border-color: solid 2px black;
@@ -229,6 +223,16 @@ a.article:hover {
 .btn:hover {
   background-color: green;
   border-color: gray;
+}
+
+.btn {
+  border-color: black;
+  background-color: pink;
+  margin: 15px;
+}
+
+.accordion-button {
+  background-color: lightgrey;
 }
 
 #myDIV1 {
@@ -257,7 +261,8 @@ a.article:hover {
     top: 200px;
   }
 }
-#myBtn1, #myBtn2 {
+#myBtn1,
+#myBtn2 {
   background-color: pink;
   border-color: solid 2px gray;
   border-radius: 5px;
@@ -298,7 +303,7 @@ h1 {
   margin: 0;
   padding: 0;
   /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
-     eestaas */
+        eestaas */
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -352,12 +357,10 @@ h1 {
   #sidebar ul li a {
     padding: 20px 10px;
   }
-
   #sidebar ul li a span {
     font-size: 0.85em;
   }
-
-  #sidebar ul li a i {
+  #sidebar ul li a span i {
     margin-right: 0;
     display: block;
   }
@@ -365,8 +368,7 @@ h1 {
   #sidebar ul ul a {
     padding: 10px !important;
   }
-
-  #sidebar ul li a i {
+  #sidebar ul ul a i {
     font-size: 1.3em;
   }
 
@@ -388,10 +390,10 @@ h1 {
     position: relative;
     font-size: 15px;
   }
-    p {
-        color:black;
-    }
-    
+
+  .p {
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=built-style.css.map */
