@@ -7,6 +7,9 @@ $(document).ready(function () {
 
 });
 
+
+
+
 // REMOVE THE CHILD NODES FROM THE LIST (h-hetkenä.html)
 
 function myFunction2() {
@@ -32,6 +35,9 @@ function myFunction3() {
       element.removeChild(element.childNodes[0]);
     }
   }
+
+
+
 
 
  /*addEventListener() method to attach an "animationstart",
@@ -71,17 +77,22 @@ function myFunction3() {
    this.style.backgroundColor = "lightgray";
  }
 
+
+
+
 //ONMOUSEENTER EVENT (index.html h2)
 
  function mouseEnter() {
   document.getElementById("demo3").style.color = "pink";
+  document.getElementById("demo3").style.fontSize = "x-large";
+  
 }
 
 function mouseLeave() {
   document.getElementById("demo3").style.color = "black";
+  document.getElementById("demo3").style.fontSize = "";
 }
 
-document.getElementById("teksti1").style.color = "blue";
 
 
 
