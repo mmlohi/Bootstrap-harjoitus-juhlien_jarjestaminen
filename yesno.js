@@ -114,7 +114,7 @@ mouseTarget.addEventListener('mouseenter', e => {
 mouseTarget.addEventListener('mouseleave', e => {
   mouseTarget.style.border = '1px solid #333';
   leaveEventCount++;
-  addListItem('Kiitos sinulle! Tämä oli kiitos nro' + leaveEventCount + '.');
+  addListItem('Kiitos sinulle! Tämä oli kiitos nro ' + leaveEventCount + '.');
 });
 
 function addListItem(text) {
