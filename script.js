@@ -93,6 +93,8 @@ function mouseLeave() {
   document.getElementById("demo3").style.fontSize = "";
 }
 
+//Select the first h3 or the first h4:" (jälkeen.html)
 
+document.querySelector("h3, h4").style.color = "grey";
 
 
