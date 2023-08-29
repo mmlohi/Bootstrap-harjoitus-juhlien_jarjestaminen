@@ -1,4 +1,4 @@
-# Bootstrap-palautettava-teht-v-
+# Bootstrap-harjoitus/juhlien järjestäminen
 
 Tämä on harjoitustehtävä OAMK tietojenkäsittelyn Web-tekniikan ensimmäiseltä kurssilta. Olen käyttänyt seuraavia tekniikoita :
 
